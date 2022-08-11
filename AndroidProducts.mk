@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/aicp_garden.mk
+   $(LOCAL_DIR)/bliss_garden.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_garden-user \
-    aicp_garden-userdebug \
-    aicp_garden-eng
+    bliss_garden-user \
+    bliss_garden-userdebug \
+    bliss_garden-eng
