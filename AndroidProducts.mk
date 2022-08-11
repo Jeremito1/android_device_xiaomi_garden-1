@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/nad_garden.mk
+   $(LOCAL_DIR)/aicp_garden.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_garden-user \
-    nad_garden-userdebug \
-    nad_garden-eng
+    aicp_garden-user \
+    aicp_garden-userdebug \
+    aicp_garden-eng
