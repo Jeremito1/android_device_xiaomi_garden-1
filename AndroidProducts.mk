@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/bliss_garden.mk
+   $(LOCAL_DIR)/spark_garden.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_garden-userdebug \
-    bliss_garden-eng \
-    bliss_garden-user
+    spark_garden-userdebug \
+    spark_garden-eng \
+    spark_garden-user
