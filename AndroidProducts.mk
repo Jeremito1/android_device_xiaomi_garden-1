@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/corvus_garden.mk
+   $(LOCAL_DIR)/awaken_garden.mk
 
 COMMON_LUNCH_CHOICES := \
-    corvus_garden-userdebug \
-    corvus_garden-eng \
-    corvus_garden-user
+    awaken_garden-userdebug \
+    awaken_garden-eng \
+    awaken_garden-user
