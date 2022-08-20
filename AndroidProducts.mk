@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/bliss_garden.mk
+   $(LOCAL_DIR)/fluid_garden.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_garden-userdebug \
-    bliss_garden-eng \
-    bliss_garden-user
+    fluid_garden-userdebug \
+    fluid_garden-eng \
+    fluid_garden-user
