@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/xtended_garden.mk
+   $(LOCAL_DIR)/aicp_garden.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_garden-userdebug \
-    xtended_garden-eng \
-    xtended_garden-user
+    aicp_garden-userdebug \
+    aicp_garden-eng \
+    aicp_garden-user
