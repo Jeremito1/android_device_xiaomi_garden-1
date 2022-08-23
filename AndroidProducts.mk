@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/bliss_garden.mk
+   $(LOCAL_DIR)/superior_garden.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_garden-userdebug \
-    bliss_garden-eng \
-    bliss_garden-user
+    superior_garden-userdebug \
+    superior_garden-eng \
+    superior_garden-user
