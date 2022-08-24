@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/nad_garden.mk
+   $(LOCAL_DIR)/octavi_garden.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_garden-userdebug \
-    nad_garden-eng \
-    nad_garden-user
+    octavi_garden-userdebug \
+    octavi_garden-eng \
+    octavi_garden-user
