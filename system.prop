@@ -110,6 +110,11 @@ persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 persist.vendor.vilte_support=0
 
+# LMKD
+ro.lmk.psi_complete_stall_ms=150
+ro.lmk.swap_free_low_percentage=20
+ro.lmk.kill_timeout_ms=100
+
 # OMX
 debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
@@ -213,3 +218,7 @@ TapSlop=1px
 ro.surface_flinger.supports_background_blur=1
 ro.sf.blurs_are_expensive=1
 persist.sys.sf.disable_blurs=1
+
+# GBoard
+ro.com.google.ime.kb_pad_port_b=1
+ro.com.google.ime.corner_key_r=35
