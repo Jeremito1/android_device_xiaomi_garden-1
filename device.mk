@@ -204,3 +204,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libshim_mtk_vt_service \
     libshim_sink
+
+# MediaTek FMRadio
+PRODUCT_PACKAGES += \
+    FMRadio
