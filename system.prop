@@ -222,3 +222,38 @@ persist.sys.sf.disable_blurs=1
 # GBoard
 ro.com.google.ime.kb_pad_port_b=1
 ro.com.google.ime.corner_key_r=35
+
+# Modify MMS APN Retry Timer
+ro.gsm.2nd_data_retry_config=max/_retries=3, 3000, 3000, 3000
+
+# Improve voice call clarity 
+ro.ril.enable.amr.wideband=1
+
+# Improve panorama shots
+ro.media.panorama.defres=10800x2442
+ro.media.panorama.frameres=3264x1840
+
+# Stream videos faster
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=true
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+media.stagefright.enable-rtsp=true
+media.stagefright.enable-record=true
+
+# Give support on ipv6 and ipv4
+persist.telephony.support.ipv6=1
+persist.telephony.support.ipv4=1
+
+# Improve overall media quality
+ro.media.enc.jpeg.quality=100
+ro.media.dec.aud.wma.enabled=1
+ro.media.dec.vid.wmv.enabled=1
+
+# Cpu Threading
+persist.sys.dalvik.hyperthreading=true
+persist.sys.dalvik.multithread=true
+
+# GPU Render
+debug.composition.type=skiagl
+debug.hwui.renderer=skiagl
