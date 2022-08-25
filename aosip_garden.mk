@@ -19,20 +19,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from Nusantara vendor
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 # Some build flags
 TARGET_BOOT_ANIMATION_RES := 720
-TARGET_FACE_UNLOCK := true
-TARGET_USES_BLUR := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_NO_RECOVERY := true
+TARGET_USES_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Inherit from garden device makefile
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := nad_garden
+PRODUCT_NAME := aosip_garden
 PRODUCT_DEVICE := garden
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := xiaomi
@@ -41,12 +43,12 @@ PRODUCT_MANUFACTURER := xiaomi
 TARGET_VENDOR := xiaomi
 TARGET_VENDOR_PRODUCT_NAME := garden
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.211001.001.A1 7641976 release-keys"
+    PRIVATE_BUILD_DESC="raven-user 12 SQ3A.220705.004 8233519 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.211001.001.A1/7641976:user/release-keys
+BUILD_FINGERPRINT := google/raven/raven:12/SQ3A.220705.004/8233519:user/release-keys
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
