@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/aosip_garden.mk
+   $(LOCAL_DIR)/omni_garden.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosip_garden-userdebug \
-    aosip_garden-eng \
-    aosip_garden-user
+    omni_garden-userdebug \
+    omni_garden-eng \
+    omni_garden-user
