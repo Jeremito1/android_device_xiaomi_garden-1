@@ -4,5 +4,10 @@
         "repository": "Mayuri-Chan/proprietary_vendor_xiaomi_garden",
         "target_path": "vendor/xiaomi/garden",
         "branch": "11"
-  }
+  },  
+  {
+    "repository" : "techyminati/android_packages_apps_FMRadio",
+    "target_path": "packages/apps/FMRadio",
+    "branch"     : "lineage-18.1"
+  },
 ]
