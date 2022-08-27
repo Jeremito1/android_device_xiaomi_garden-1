@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/palladium_garden.mk
+   $(LOCAL_DIR)/komodo_garden.mk
 
 COMMON_LUNCH_CHOICES := \
-    palladium_garden-userdebug \
-    palladium_garden-eng \
-    palladium_garden-user
+    komodo_garden-userdebug \
+    komodo_garden-eng \
+    komodo_garden-user
