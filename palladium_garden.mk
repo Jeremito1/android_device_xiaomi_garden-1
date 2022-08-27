@@ -33,10 +33,6 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 # Official Bangbang
 PALLADIUM_BUILD_TYPE := OFFICIAL
 
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cherish.maintainer=NotKerd69
-
 # Inherit from garden device makefile
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
