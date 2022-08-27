@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from XDDDDDD vendor
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+$(call inherit-product, vendor/palladium/config/common_full_phone.mk)
 
 # Some build flags
 TARGET_BOOT_ANIMATION_RES := 720
@@ -30,8 +30,8 @@ TARGET_USES_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
-# Official
-CHERISH_BUILD_TYPE := OFFICIAL
+# Official Bangbang
+PALLADIUM_BUILD_TYPE := OFFICIAL
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -41,7 +41,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cherish_garden
+PRODUCT_NAME := palladium_garden
 PRODUCT_DEVICE := garden
 PRODUCT_BRAND := Redmi
 PRODUCT_MANUFACTURER := xiaomi
