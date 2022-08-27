@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/aosip_garden.mk
+   $(LOCAL_DIR)/cherish_garden.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosip_garden-userdebug \
-    aosip_garden-eng \
-    aosip_garden-user
+    cherish_garden-userdebug \
+    cherish_garden-eng \
+    cherish_garden-user
