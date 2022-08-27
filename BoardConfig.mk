@@ -101,7 +101,6 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
 # Memory Config
 MALLOC_SVELTE := true
-PRODUCT_DISABLE_SCUDO := true
 
 # Metadata
 BOARD_ROOT_EXTRA_FOLDERS += metadata
