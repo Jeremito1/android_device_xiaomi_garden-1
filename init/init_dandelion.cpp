@@ -106,7 +106,7 @@ void vendor_load_properties()
     property_override("dalvik.vm.heapminfree", heapminfree);
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
 
-    string model = "Redmi G25 Series";
+    string model = "Redmi MT6762G Series";
 
     // Override odm and vendor partitions' props
     string prop_partitions[] = { "odm.", "vendor." };
@@ -138,39 +138,16 @@ void vendor_load_properties()
     property_override(string("ro.charger.enable_suspend"), string("true"));
 
     std::string region = GetProperty("ro.boot.hwc", "");
-    std::string hwname = GetProperty("ro.boot.hwname", "");
-    std::string product_name = GetProperty("ro.product.name", "")
+    std::string product_name = GetProperty("ro.product.name", "");
 
-    if (hwname == "angelica" || hwname == "angelica_second") {
-        property_override("ro.product.brand", "Redmi");
-        property_override("ro.product.model", "Redmi 9C");
-        property_override("ro.product.device", "angelica");
-    } else if (hwname == "angelicain") {
-        if (product_name == "angelicain_in") {
-            property_override("ro.product.model", "POCO C31");
-        } else {
-            property_override("ro.product.model", "POCO C3");
-        }
-        property_override("ro.product.brand", "POCO");
-        property_override("ro.product.device", "angelicain");
-    } else if (hwname == "angelican") {
-        property_override("ro.product.brand", "Redmi");
-        property_override("ro.product.model", "Redmi 9C NFC");
-        property_override("ro.product.device", "angelican");
-    } else if (hwname == "cattail") {
-        property_override("ro.product.brand", "Redmi");
-        property_override("ro.product.model", "Redmi 9");
-        property_override("ro.product.device", "cattail");
-    } else if (hwname == "dandelion") {
-        property_override("ro.product.brand", "Redmi");
-        property_override("ro.product.device", "dandelion");
-        if (region == "India_9i") {
-            property_override("ro.product.model", "Redmi 9I");
-        } else if (region == "VDF") {
-            property_override("ro.product.model", "Redmi 9AT");
-        } else {
-            property_override("ro.product.model", "Redmi 9A");
-        }
+    property_override("ro.product.brand", "Redmi");
+    property_override("ro.product.device", "dandelion");
+    if (region == "India_9i") {
+        property_override("ro.product.model", "Redmi 9I");
+    } else if (product_name == "dandelion_id2") { // Redmi 10A Indonesia
+        property_override("ro.product.model", "Redmi 10A");
+    } else {
+        property_override("ro.product.model", "Redmi 9A");
     }
 
 }
